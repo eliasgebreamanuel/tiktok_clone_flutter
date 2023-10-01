@@ -14,7 +14,9 @@ class AuthController extends GetxController {
   static AuthController instance = Get.find();
   late Rx<User?> _user;
   late Rx<File?> _pickedImage;
-
+  late Rx<User?> _user2;
+  const name = '';
+  var address = '';
   // this is used to create a getter function for the selected image file
   File? get profilePhoto => _pickedImage.value;
 
